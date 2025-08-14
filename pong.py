@@ -9,6 +9,9 @@ clock = pygame.time.Clock()
 points1 = 0
 points2 = 0
 
+icon = pygame.image.load('icon.png')
+pygame.display.set_icon(icon)
+
 font = pygame.font.Font(None, 64)
 text1 = font.render(f"{points1}", True, (255, 255, 255))
 text1_pos = text1.get_rect(centerx=screen.get_width() / 3, y= 10)
